@@ -3,12 +3,9 @@ package com.example;
 public class HelloApp {
     public static void main(String[] args) {
 
-        // Check if user provided input
-        if (args.length > 0) {
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-        } else {
-            System.out.println("Hello, User!");
-        }
+        // Assign name or default "World"
+        String name = (args.length > 0) ? args[0] : "World";
+
+        System.out.println("Hello, " + name + "!");
     }
 }
